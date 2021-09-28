@@ -92,11 +92,14 @@ namespace LinkedListsTraining
 
             while (current != null)
             {
-                if (counter == 0) //Handle when index = 0;
+                /*
+                if (counter == 0) //handle index 0
                 {
                     Head = newNode;
                     newNode.next = current;
                 }
+                */
+
                 if (counter == index - 1)
                 {
                     
