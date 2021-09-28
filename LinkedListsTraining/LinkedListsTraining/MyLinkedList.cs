@@ -92,6 +92,7 @@ namespace LinkedListsTraining
 
             while (current.next != null)
             {
+                counter++;
                 
                 if (counter == index)
                 {
@@ -102,7 +103,6 @@ namespace LinkedListsTraining
                 }
 
                 current = current.next;
-                counter++;
             }
         }
 

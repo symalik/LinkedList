@@ -10,14 +10,24 @@ namespace LinkedListsTraining
 
             MyLinkedList myList = new MyLinkedList();
 
+            myList.AddAtHead(7);
+            myList.AddAtHead(2);
             myList.AddAtHead(1);
-            myList.AddAtTail(3);
-            myList.AddAtIndex(1, 2);
+            myList.AddAtIndex(3, 0);
+
+            Console.WriteLine("First four items added: ");
+            myList.displayList();
+
+            myList.DeleteAtIndex(2);
+            myList.AddAtHead(6);
+            myList.AddAtTail(4);
+
             Console.WriteLine("Current List: ");
             myList.displayList();
-            Console.WriteLine("Return item: " + myList.Get(1));
+            Console.WriteLine("Return item: " + myList.Get(4));
 
 
+            /*
             myList.AddAtHead(40);
             myList.AddAtHead(30);
             myList.AddAtHead(20);
@@ -37,7 +47,7 @@ namespace LinkedListsTraining
             myList.DeleteAtIndex(5);
             Console.WriteLine("Deleting xTh Item - New List ");
             myList.displayList();
-
+            */
         }
     }
 }
